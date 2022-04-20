@@ -22,4 +22,8 @@ if not file.Exists("autorun/luadev.lua", "LUA") then
 	function luadev.RunOnServer(code, _)
 		lutils.Execute(code, {true}, {})
 	end
+
+	function luadev.CanLuaDev()
+		return false
+	end
 end
